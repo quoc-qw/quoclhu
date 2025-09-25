@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bầu Cua VIP 6 Mặt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>🎲 Game Bầu Cua VIP</h1>
+      <p>Số dư: <span id="balance">5,000,000</span>₫</p>
+    </header>
+
+    <main>
+      <div class="faces-grid">
+        <div class="face" data-face="bau">🍐<span>Bầu</span>
+          <input type="number" class="bet-input" data-face="bau" min="0" step="1000" value="0">
+        </div>
+        <div class="face" data-face="cua">🦀<span>Cua</span>
+          <input type="number" class="bet-input" data-face="cua" min="0" step="1000" value="0">
+        </div>
+        <div class="face" data-face="tom">🦐<span>Tôm</span>
+          <input type="number" class="bet-input" data-face="tom" min="0" step="1000" value="0">
+        </div>
+        <div class="face" data-face="ca">🐟<span>Cá</span>
+          <input type="number" class="bet-input" data-face="ca" min="0" step="1000" value="0">
+        </div>
+        <div class="face" data-face="ga">🐓<span>Gà</span>
+          <input type="number" class="bet-input" data-face="ga" min="0" step="1000" value="0">
+        </div>
+        <div class="face" data-face="nai">🦌<span>Nai</span>
+          <input type="number" class="bet-input" data-face="nai" min="0" step="1000" value="0">
+        </div>
+      </div>
+
+      <div class="dice-area">
+        <div class="dice" id="dice1">❓</div>
+        <div class="dice" id="dice2">❓</div>
+        <div class="dice" id="dice3">❓</div>
+      </div>
+
+      <div class="controls">
+        <button id="rollBtn">🎲 Quay</button>
+        <button id="clearBtn">Xóa cược</button>
+      </div>
+
+      <div class="result" id="resultText">Hãy đặt cược và quay!</div>
+    </main>
+
+    <footer>
+      <small>Luật chơi: mỗi mặt trúng được trả 1:1 trên mỗi lần xuất hiện.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
